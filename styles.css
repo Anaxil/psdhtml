@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Museo_Slab_500_2';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./assets/museoslab_500/Museo_Slab_500_2-webfont.woff2') format('woff2'),
+         url('./assets/museoslab_500/Museo_Slab_500_2-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'sansationregular';
+    src: url('./assets/sansation/sansation_regular/Sansation-Regular-webfont.eot');
+    src: url('./assets/sansation/sansation_regular/Sansation-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/sansation/sansation_regular/Sansation-Regular-webfont.woff') format('woff'),
+         url('./assets/sansation/sansation_regular/Sansation-Regular-webfont.ttf') format('truetype'),
+         url('./assets/sansation/sansation_regular/Sansation-Regular-webfont.svg#sansationregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sansationitalic';
+    src: url('./assets/sansation/sansation_regular/ansation-Italic-webfont.eot');
+    src: url('./assets/sansation/sansation_regular/Sansation-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('.assets/sansation/sansation_regular/Sansation-Italic-webfont.woff2') format('woff2'),
+         url('./assets/sansation/sansation_regular/Sansation-Italic-webfont.woff') format('woff'),
+         url('./assets/sansation/sansation_regular/Sansation-Italic-webfont.ttf') format('truetype'),
+         url('./assets/sansation/sansation_regular/Sansation-Italic-webfont.svg#sansationitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.xborder {
+    border: 1px solid red;
+}
+
+.cotnainer a {
+    border-bottom: 1px dashed #999999;
+
+}
+
+.container a img {
+    border-bottom: none;
+}
+
+.row {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+    font-family: 'Museo_Slab_500_2';
+    font-weight: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background: #000;
+}
+
+body, input, textarea, select {
+    font-family: 'sansationregular';
+    /*font-size: 14px;
+    line-height: 23px;*/
+    color: #331404;
+}
+
+/* style dla headera */
+
+body header {
+    background: #170901;
+    height: 76px;
+    border-bottom: 5px solid #f55b0c;
+}
+
+nav a {
+    color: #f55b0c;
+}
+
+.navbar-toggler-icon {
+    border: 1px solid #f55b0c; 
+    color: #f55b0c;
+}
+/*
+.navbar-toggler {
+    border-color: #f55b0c;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+*/
+
+h1.navbar-brand a {
+    width: 146px;
+    height: 25px;
+    display: block;
+    background: url(./img/lovetoeat-logo.png) no-repeat;
+
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;    
+}
+
+nav ul li a.nav-link, nav ul li a.dropdown-item {
+    font-family: 'Museo_Slab_500_2';
+    color: #ff803f;
+    text-transform: uppercase;
+    padding: 1.6em;
+}
+
+nav ul li.active a {
+    background: #f55b0c;
+    color: #170901;
+}
+
+nav ul li a.nav-link:hover {
+    opacity: 0.7;
+}
+
+nav ul li div.dropdown-menu {
+    background: #170901;
+    width: 288px;
+    padding: 0;
+}
+
+nav ul li:first-child:hover .dropdown-menu{
+    display: block;
+}
+
+nav ul li div.dropdown-menu a.dropdown-item{
+    padding-left: 75px;
+    padding-top: 22px;
+    background-position: 12px 5px;
+    background-repeat: no-repeat;
+    border-bottom: 1px dashed #3e1c09;  
+}
+
+nav ul li div.dropdown-menu a.lunch{
+    background-image: url(./img/submenu-icon-dinner.png)
+}
+nav ul li div.dropdown-menu a.breakfast{
+    background-image: url(./img/submenu-icon-bread.png)
+}
+nav ul li div.dropdown-menu a.snacks{
+    background-image: url(./img/submenu-icon-snacks.png)
+}
+nav ul li div.dropdown-menu a.desserts{
+    background-image: url(./img/submenu-icon-desserts.png)
+}
+nav ul li div.dropdown-menu a.drinks{
+    background-image: url(./img/submenu-icon-drinks.png)
+}
+nav ul li div.dropdown-menu a.all{
+    background-color: #f55b0c;
+    padding: 0.5em;
+    color: #230e02;
+    text-align: center;
+}
+
+nav ul li div.dropdown-menu a.all i{
+margin-left: 5px;
+}
+
+/* header styles */
+
+#header .wooden {
+    background: url(./img/top-gfx.jpg) repeat-x;
+    width: 100%;
+}
+
+#header .slides {
+    overflow: hidden;
+    height: 690px;
+}
+
+#header .peppers {
+    height: 690px;
+    position: relative;
+}
+
+#header .peppers .caption {
+    position: absolute;
+    left: 8%;
+    top: 178px;
+    width: 382px;
+    height: 176px;
+    background: url("./img/header-slider-caption-bg.jpg");
+    padding: 34px 40px 0px 25px;
+}
+
+#header .peppers .caption, #header .peppers .caption a{ 
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    
+}
